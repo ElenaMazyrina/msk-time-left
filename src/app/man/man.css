@@ -1,0 +1,6 @@
+.man {
+  width: auto;
+  svg {
+    transform: scale(30%);
+  }
+}
