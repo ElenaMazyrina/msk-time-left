@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {TimeDownCalculationService} from '../time-down-calculation-service';
 
 @Component({
   selector: 'app-man',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './man.html',
   styleUrl: './man.css',
 })
-export class Man {}
+export class Man {
+  private readonly timeDownCalculationService = inject(TimeDownCalculationService);
+
+}

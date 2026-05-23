@@ -1,6 +1,8 @@
-.man {
-  width: auto;
-  svg {
-    transform: scale(30%);
-  }
+:host {
+  display: block;
 }
+
+svg {
+  /*transform: scale(30%);*/
+}
+
