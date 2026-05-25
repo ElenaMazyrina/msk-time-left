@@ -1,10 +1,9 @@
 import {Component, signal, WritableSignal} from '@angular/core';
 import {ProgressBar} from './progress-bar/progress-bar';
-import {Man} from './man/man';
 
 @Component({
   selector: 'app-root',
-  imports: [ProgressBar, Man],
+  imports: [ProgressBar],
   templateUrl: './app.html',
   styleUrl: './app.css',
   standalone: true,

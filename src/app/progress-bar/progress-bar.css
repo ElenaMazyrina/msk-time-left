@@ -1,10 +1,24 @@
+:host {
+  display: block;
+  margin: 300px 100px;
+}
+
 .progress-container {
+
+  /*margin-top: 200px;*/
   width: 100%;
   background-color: #ddd;
 }
 
 .progress-bar {
+  position: relative;
   width: 0;
   height: 20px;
   background-color: #4CAF50;
+}
+
+.progress-bar-butzerman {
+  position: absolute;
+  right: 0;
+  top: -150px;
 }
