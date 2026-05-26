@@ -3,3 +3,11 @@ body {
   flex-direction: column;
   background-color: #0e3c85;
 }/* You can add global styles to this file, and also import other style files */
+
+
+.playpen-sans-timer {
+   font-family: "Playpen Sans", cursive;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+}
