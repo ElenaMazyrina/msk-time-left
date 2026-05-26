@@ -1,10 +1,9 @@
 import {AfterViewInit, Component, ElementRef, inject} from '@angular/core';
 import {TimeDownCalculationService} from '../time-down-calculation-service';
-import {Man} from '../man/man';
 
 @Component({
   selector: 'app-progress-bar',
-  imports: [Man],
+  imports: [],
   templateUrl: './progress-bar.html',
   styleUrl: './progress-bar.css',
 })
@@ -15,7 +14,7 @@ export class ProgressBar implements AfterViewInit {
   ngAfterViewInit(): void {
     console.log('ngAfterViewInit');
     // this.setProgress(this.timeDownCalculationService.getDiffInPercentage());
-    this.setProgress(30);
+    this.setProgress(50);
   }
 
   private setProgress(percent: number): void {

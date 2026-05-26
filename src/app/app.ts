@@ -9,5 +9,4 @@ import {ProgressBar} from './progress-bar/progress-bar';
   standalone: true,
 })
 export class App {
-  protected readonly title: WritableSignal<string> = signal('How many days?');
 }

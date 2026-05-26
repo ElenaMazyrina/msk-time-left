@@ -18,28 +18,31 @@
   background-color: #4CAF50;
 }
 
-.progress-bar-butzerman {
-  position: absolute;
-  right: 0;
-  top: -100px;
-}
-
-@media (min-width: 768px) {
-  .progress-bar-butzerman {
-    top: -150px;
-  }
-}
-
-.house-picture {
+.house-img {
   position: absolute;
   width: 450px;
   top: -200px;
   right: -155px;
 }
 
+.butzer-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
 @media (min-width: 768px) {
-  .house-picture {
+  .house-img {
     width: 700px;
     top: -366px;
+  }
+
+  .butzer-img {
+    top: -150px;
+
+    width: 150px;
+    height: 150px;
   }
 }
