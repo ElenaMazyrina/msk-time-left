@@ -1,11 +1,11 @@
-:host {
-  display: block;
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   margin: 300px 100px;
 }
 
 .progress-container {
-
-  /*margin-top: 200px;*/
   width: 100%;
   background-color: #ddd;
   position: relative;
@@ -19,29 +19,28 @@
 }
 
 .house-img {
-  position: absolute;
-  width: 450px;
-  top: -200px;
-  right: -155px;
+  width: 180px;
+  margin-bottom: -3px;
+  margin-left: -4px;
 }
 
 .butzer-img {
   width: 100px;
   height: 100px;
   position: absolute;
-  right: 0;
+  right: -40px;
   top: -100px;
 }
 
 @media (min-width: 768px) {
   .house-img {
-    width: 700px;
-    top: -366px;
+    width: 400px;
+    margin-bottom: -7px;
+    margin-left: -14px;
   }
 
   .butzer-img {
     top: -150px;
-
     width: 150px;
     height: 150px;
   }

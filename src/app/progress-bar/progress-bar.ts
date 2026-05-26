@@ -12,9 +12,8 @@ export class ProgressBar implements AfterViewInit {
   private readonly timeDownCalculationService = inject(TimeDownCalculationService);
 
   ngAfterViewInit(): void {
-    console.log('ngAfterViewInit');
-    // this.setProgress(this.timeDownCalculationService.getDiffInPercentage());
-    this.setProgress(50);
+    this.setProgress(this.timeDownCalculationService.getDiffInPercentage());
+    // this.setProgress(50);
   }
 
   private setProgress(percent: number): void {
