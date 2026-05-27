@@ -1,8 +1,14 @@
+.text-wrapper {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
 .progress-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 150px 100px 30px 100px;
+  margin: 150px 50px 30px 50px;
 }
 
 .progress-container {
@@ -15,24 +21,28 @@
   position: relative;
   width: 0;
   height: 20px;
-  background-color: #4CAF50;
+  background-color: #deb449;
+  /*background-image: */
 }
 
 .house-img {
-  width: 180px;
-  margin-bottom: -3px;
+  width: 100px;
+  margin-bottom: -2px;
   margin-left: -4px;
 }
 
 .butzer-img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
   position: absolute;
-  right: -40px;
-  top: -100px;
+  right: -25px;
+  top: -70px;
 }
 
 @media (min-width: 768px) {
+  .progress-wrapper {
+    margin: 150px 100px 30px 100px;
+  }
+
   .house-img {
     width: 400px;
     margin-bottom: -7px;
@@ -44,12 +54,10 @@
     width: 150px;
     height: 150px;
   }
-}
 
-.text-wrapper {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  text-align: center;
-  color: white;
-  font-size: 30px;
+  .text-wrapper {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
 }
