@@ -10,10 +10,10 @@ import {TimeDownCalculationService} from '../time-down-calculation-service';
 export class ProgressBar implements AfterViewInit {
   private readonly el = inject(ElementRef);
   private readonly timeDownCalculationService = inject(TimeDownCalculationService);
+  protected readonly durationInDays = this.timeDownCalculationService.getDifferenceInDays();
 
   ngAfterViewInit(): void {
     this.setProgress(this.timeDownCalculationService.getDiffInPercentage());
-    // this.setProgress(50);
   }
 
   private setProgress(percent: number): void {

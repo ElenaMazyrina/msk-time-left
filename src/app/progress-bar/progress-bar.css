@@ -1,8 +1,8 @@
-.wrapper {
+.progress-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 300px 100px;
+  margin: 150px 100px 30px 100px;
 }
 
 .progress-container {
@@ -44,4 +44,12 @@
     width: 150px;
     height: 150px;
   }
+}
+
+.text-wrapper {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  text-align: center;
+  color: white;
+  font-size: 30px;
 }
