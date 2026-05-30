@@ -15,14 +15,19 @@
   width: 100%;
   background-color: #ddd;
   position: relative;
+  border-radius: 10px;
 }
 
 .progress-bar {
   position: relative;
   width: 0;
-  height: 20px;
-  background-color: #deb449;
-  /*background-image: */
+  height: 14px;
+  border-radius: 10px;
+  background-image: radial-gradient(circle at 50% 50%, #fcd12f 30%, transparent 30%), radial-gradient(circle at 50% 50%, #1b2f74 20%, transparent 20%);
+  background-size: 7px 7px;
+  background-repeat: repeat;
+  opacity: 0.68;
+  background-color: #1b2f74;
 }
 
 .house-img {
@@ -41,6 +46,10 @@
 @media (min-width: 768px) {
   .progress-wrapper {
     margin: 150px 100px 30px 100px;
+  }
+
+  .progress-bar {
+    height: 20px;
   }
 
   .house-img {
