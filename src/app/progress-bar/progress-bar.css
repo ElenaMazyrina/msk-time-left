@@ -26,8 +26,8 @@
   background-image: radial-gradient(circle at 50% 50%, #fcd12f 30%, transparent 30%), radial-gradient(circle at 50% 50%, #1b2f74 20%, transparent 20%);
   background-size: 7px 7px;
   background-repeat: repeat;
-  opacity: 0.68;
-  background-color: #1b2f74;
+  opacity: 1;
+  background-color: #f0e1a8;
 }
 
 .house-img {
