@@ -1,3 +1,9 @@
+.message {
+  margin-top: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .text-wrapper {
   text-align: center;
   color: white;
