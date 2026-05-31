@@ -1,8 +1,21 @@
+/*for fun*/
 .message {
   margin-top: 10px;
   text-align: center;
   color: #ffffff;
 }
+
+.grechka-img {
+  width: 100px;
+  margin-bottom: -20px;
+}
+@media (min-width: 768px) {
+  .grechka-img {
+    width: 300px;
+    margin-bottom: -60px;
+  }
+}
+/****************/
 
 .text-wrapper {
   text-align: center;
