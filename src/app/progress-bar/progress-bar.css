@@ -51,7 +51,7 @@
 
 .house-img {
   width: 100px;
-  margin-bottom: -2px;
+  margin-bottom: -7px;
   margin-left: -4px;
 }
 
@@ -60,6 +60,61 @@
   position: absolute;
   right: -25px;
   top: -70px;
+}
+
+.house-img-container {
+  position: relative;
+}
+
+.light-box {
+  position: absolute;
+  top: 64px;
+  left: 11px;
+  width: 10px;
+  height: 11px;
+  background: #ffaa33;
+  box-shadow: 0 0 20px #ffaa33;
+  animation: candleFlicker 2.2s infinite alternate ease-in-out;
+  mix-blend-mode: overlay;
+}
+
+@keyframes candleFlicker {
+  0% {
+    background: #e6981a;
+    box-shadow: 0 0 8px #e6981a;
+  }
+  15% {
+    background: #ffb347;
+    box-shadow: 0 0 22px #ffb347;
+  }
+  30% {
+    background: #dd8800;
+    box-shadow: 0 0 10px #dd8800;
+  }
+  50% {
+    background: #ffaa33;
+    box-shadow: 0 0 28px #ffaa33;
+  }
+  65% {
+    background: #f0a020;
+    box-shadow: 0 0 15px #f0a020;
+  }
+  80% {
+    background: #ffbb55;
+    box-shadow: 0 0 32px #ffbb55;
+  }
+  95% {
+    background: #cc7a00;
+    box-shadow: 0 0 6px #cc7a00;
+  }
+  100% {
+    background: #ffaa33;
+    box-shadow: 0 0 20px #ffaa33;
+  }
+}
+
+.eyes {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -73,7 +128,7 @@
 
   .house-img {
     width: 400px;
-    margin-bottom: -7px;
+    margin-bottom: -11px;
     margin-left: -14px;
   }
 
@@ -87,6 +142,50 @@
     color: white;
     font-size: 30px;
   }
+
+  .light-box {
+    top: 259px;
+    left: 47px;
+    width: 39px;
+    height: 45px;
+  }
+
+  /*eyes*/
+  .eyes {
+    opacity: 50%;
+    mix-blend-mode: overlay;
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    top: 103px;
+    left: 171px;
+  }
+
+  .eye {
+    width: 10px;
+    height: 14px;
+    background: radial-gradient(circle at 35% 35%, white, #ddd);
+    border-radius: 50%;
+    animation: randomBlink 4s infinite;
+  }
+
+  @keyframes randomBlink {
+    0%, 75%, 78%, 82%, 85%, 100% { transform: scaleY(1); }
+    76%, 79%, 83% { transform: scaleY(0.05); }
+  }
+
+  /* Зрачок */
+  .eye::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #2c3e50;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (min-width: 480px) {
@@ -94,4 +193,3 @@
     margin: 90px 90px 30px 90px;
   }
 }
-
