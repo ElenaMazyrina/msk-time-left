@@ -1,4 +1,5 @@
 body {
+  visibility: hidden;
   display: flex;
   flex-direction: column;
 
@@ -15,3 +16,6 @@ body {
   background-color: #0e3c85;
 }
 
+body.loaded {
+  visibility: visible;
+}

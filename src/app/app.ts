@@ -9,4 +9,9 @@ import {ProgressBar} from './progress-bar/progress-bar';
   standalone: true,
 })
 export class App {
+  constructor() {
+    window.addEventListener('load', function() {
+      document.body.classList.add('loaded');
+    });
+  }
 }
