@@ -1,22 +1,32 @@
 <!--<div class="message">Ром, хорошего тебе воскресенья! Сил и находчивости!</div>-->
-<div class="progress-wrapper">
-  <div class="progress-container">
-    <div class="progress-bar" style="width: 0">
-      <img class="butzer-img" src="butzer-run.svg" />
-    </div>
+@if (!isSofaVisible()) {
+  <div class="sofa-button-container">
+    <button (click)="showSofa()" class="sofa-button">отдохнуть</button>
   </div>
-  <div class="house-img-container">
-    <img class="house-img" src="house.PNG" />
-    <div class="light-box"></div>
-    <div class="eyes">
-      <div class="eye"></div>
-      <div class="eye"></div>
+}
+@if (isSofaVisible()) {
+  <img class="sofa-img" src="relax-sofa.jpg"/>
+} @else {
+  <div class="progress-wrapper">
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 0">
+        <img class="butzer-img" src="butzer-run.svg" />
+      </div>
     </div>
+    <div class="house-img-container">
+      <img class="house-img" src="house.PNG" />
+      <div class="light-box"></div>
+      <div class="eyes">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+    </div>
+    <!--  for fun-->
+    <!--  <img class="grechka-img" src="grechka.png" />-->
   </div>
-  <!--  for fun-->
-<!--  <img class="grechka-img" src="grechka.png" />-->
-</div>
-<div class="text-wrapper">
-  Осталось дней: {{ durationInDays }}
-</div>
+  <div class="text-wrapper">
+    Осталось дней: {{ durationInDays }}
+  </div>
+}
+
 
