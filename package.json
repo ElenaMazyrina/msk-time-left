@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "github-build": "ng build --configuration production --base-href \"https://elenamazyrina.github.io/msk-time-left/\"",
-    "github-deploy": "npx angular-cli-ghpages --dir=dist/untitled/browser --no-silent"
+    "github-deploy": "npx angular-cli-ghpages --dir=dist/untitled/browser --no-silent",
+    "gh-build-deploy": "npm run github-build && npm run github-deploy"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
