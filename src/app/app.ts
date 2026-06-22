@@ -17,7 +17,7 @@ export class App implements OnDestroy {
 
   protected showRelax(): void {
     this.isRelaxVisible.set(true);
-    timer(1000 * 3)
+    timer(1000 * 6)
       .pipe(takeUntil(this.destroy$))
       .subscribe(() => this.isRelaxVisible.set(false));
   }
