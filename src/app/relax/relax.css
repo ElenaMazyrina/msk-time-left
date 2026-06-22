@@ -1,0 +1,10 @@
+.relax-img {
+  display: block;
+  margin: 70px auto;
+  width: 240px;
+
+  @media (min-width: 768px) {
+    margin: 140px auto;
+    width: 500px;
+  }
+}

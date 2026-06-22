@@ -1,22 +1,3 @@
-/*for fun*/
-.message {
-  margin-top: 10px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.grechka-img {
-  width: 100px;
-  margin-bottom: -20px;
-}
-@media (min-width: 768px) {
-  .grechka-img {
-    width: 300px;
-    margin-bottom: -60px;
-  }
-}
-/****************/
-
 .text-wrapper {
   text-align: center;
   color: white;
@@ -66,6 +47,7 @@
   position: relative;
 }
 
+/*window light*/
 .light-box {
   position: absolute;
   top: 64px;
@@ -113,6 +95,7 @@
   }
 }
 
+/*eyes*/
 .eyes {
   display: none;
 }
@@ -191,92 +174,5 @@
 @media (min-width: 480px) {
   .progress-wrapper {
     margin: 40px 90px 30px 90px;
-  }
-}
-
-.sofa-button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.sofa-button {
-  appearance: none;
-  border: 0;
-
-  padding: 18px 44px;
-  min-width: 160px;
-
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff9ef;
-
-  position: relative;
-  cursor: pointer;
-
-  background: #6358dc;
-
-  /* мультяшная форма */
-  border-radius:
-    48px 52px 46px 54px /
-    52px 44px 56px 48px;
-
-  /* толстая рисованная обводка */
-  box-shadow:
-    inset 0 4px 0 rgba(255,255,255,.12),
-    0 0 0 4px #4a42b7,
-    0 8px 0 #3f379b,
-    0 14px 30px rgba(60,50,160,.35);
-
-  transition: .15s ease;
-}
-
-.sofa-button::before {
-  content: "";
-
-  position: absolute;
-  inset: 8px;
-
-  border-radius:
-    42px 48px 44px 50px /
-    48px 42px 52px 46px;
-
-  border: 2px dashed rgba(55,45,145,.35);
-
-  pointer-events: none;
-}
-
-.sofa-button:hover {
-  transform: translateY(-2px) rotate(-0.5deg);
-}
-
-.sofa-button:active {
-  transform: translateY(6px);
-
-  box-shadow:
-    inset 0 4px 0 rgba(255,255,255,.12),
-    0 0 0 4px #4a42b7,
-    0 2px 0 #3f379b,
-    0 8px 14px rgba(60,50,160,.25);
-}
-
-@media (min-width: 768px) {
-  .sofa-button {
-    margin-right: 300px;
-
-    font-size: 24px;
-    font-weight: 600;
-    min-width: 260px;
-  }
-}
-
-.sofa-img {
-  display: block;
-  margin: 20px auto;
-  width: 240px;
-
-  @media (min-width: 768px) {
-    margin: 40px auto;
-    width: 500px;
   }
 }
