@@ -18,6 +18,7 @@ export class ProgressBar implements AfterViewInit {
   }
 
   private setProgress(percent: number): void {
+    // TODO: if percent = 100
     const bar = this.el.nativeElement.querySelector('.progress-bar');
     bar.style.width = `${Math.min(100, Math.max(0, percent))}%`;
   }
