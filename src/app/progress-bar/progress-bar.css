@@ -41,6 +41,7 @@
   position: absolute;
   right: -25px;
   top: -70px;
+  z-index: 2;
 }
 
 .house-img-container {
@@ -113,6 +114,7 @@
     width: 400px;
     margin-bottom: -11px;
     margin-left: -14px;
+    z-index: 1;
   }
 
   .butzer-img {
