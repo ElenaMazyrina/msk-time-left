@@ -1,12 +1,18 @@
 <main>
-  @if (!isRelaxVisible()) {
-    <div class="relax-button-container">
-      <button (click)="showRelax()" class="relax-button">отдохнуть</button>
-    </div>
-  }
-  @if(isRelaxVisible()) {
-    <app-relax></app-relax>
+  @if(isOver) {
+    <img class="moscow-img" alt="Butzer in Moscow" src="shaverma_moscow.jpg"/>
   } @else {
-    <app-progress-bar></app-progress-bar>
+    <div>
+      @if (!isRelaxVisible()) {
+        <div class="relax-button-container">
+          <button (click)="showRelax()" class="relax-button">отдохнуть</button>
+        </div>
+      }
+      @if(isRelaxVisible()) {
+        <app-relax></app-relax>
+      } @else {
+        <app-progress-bar></app-progress-bar>
+      }
+    </div>
   }
 </main>
